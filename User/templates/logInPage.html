@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+
+</head>
+<body>
+    <h1 class="glow">Welcome to TrekLog</h1>
+    <section>
+        <h2>Login</h2>
+        {% if messages %}
+        <ul class="messages">    
+            {% for message in messages %}    
+                {% if 'login' in message.extra_tags %}
+                <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endif %}    
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <form action="/login" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="form-control">
+            </div>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+        <button><a href="createUser">Create New User</a></button>
+    </section>
+</body>
+</html>

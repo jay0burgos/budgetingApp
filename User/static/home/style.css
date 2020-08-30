@@ -1,0 +1,59 @@
+* {
+    font-family: 'Anonymous Pro', monospace;
+    color: whitesmoke;
+}
+.error {
+    color: red;
+}
+h1, .post > h4 {
+    color:gainsboro;
+}
+input, button, option, select {
+    color: black; 
+}
+body {
+    background-color: rgb(72, 75, 75);
+    padding: 2em;
+}
+#wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+#wrapper > section {
+    width: 50%;
+    margin: 0 2em;
+    box-sizing: border-box;
+}
+.post {
+    border: dashed 1px;
+    width: 22%;
+    margin: 2em;
+    padding: 2em;
+}
+
+#email{
+    width: 250px;
+}
+
+#password{
+    width: 250px
+}
+
+.glow {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow{
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007fe6, 0 0 40px #007fe6, 0 0 50px #007fe6, 0 0 60px #007fe6, 0 0 70px #007fe6;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #4dc7ff, 0 0 40px #4dc7ff, 0 0 50px #4dc7ff, 0 0 60px #4dc7ff, 0 0 70px #4dc7ff, 0 0 80px #4dc7ff;
+    }
+  }

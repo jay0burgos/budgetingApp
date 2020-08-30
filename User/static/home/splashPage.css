@@ -1,0 +1,65 @@
+.glow {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow{
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007fe6, 0 0 40px #007fe6, 0 0 50px #007fe6, 0 0 60px #007fe6, 0 0 70px #007fe6;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #4dc7ff, 0 0 40px #4dc7ff, 0 0 50px #4dc7ff, 0 0 60px #4dc7ff, 0 0 70px #4dc7ff, 0 0 80px #4dc7ff;
+    }
+  }
+  
+  .first-info{
+    width: 100%;
+    height: 300px;
+    background-image: url( '/static/home/world.jpg' );
+}
+
+.banner1{
+    margin-left: 189px;
+    margin-top: 80px;
+    font-size: 60px;
+    background:  #343a40!important;
+    width: 180px;
+    border-radius: 15px;
+    color: #fff;
+    -webkit-animation: glow 1s ease-in-out infinite alternate; 
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.banner2{
+  margin-left: 580px;
+  margin-top: 80px;
+  font-size: 60px;
+  background:  #343a40!important;
+  width: 340px;
+  border-radius: 15px;
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+
+.banner4{
+  margin-left: 1100px;
+  margin-top: 80px;
+  font-size: 60px;
+  background:  #343a40!important;
+  width: 220px;
+  border-radius: 15px;
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
