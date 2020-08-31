@@ -33,7 +33,7 @@ def home(request):
         'utilities_total' : utilities,
         'other_total' : other
     }
-    return render (request, 'home_page.html', context)
+    return render (request, 'budgeting/home_page.html', context)
 
 # EXPENSE AND INCOME
 def add_expense(request):

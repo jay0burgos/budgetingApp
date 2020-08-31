@@ -1,5 +1,4 @@
 from django.db import models
-import re 
 import bcrypt
 from datetime import date
 from django.core.exceptions import ValidationError
@@ -51,9 +50,9 @@ class Income(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
     objects = IncomeManager()
 
-#going to be used to track monthly budgets for an annoual anaylist(future feature)
+#going to be used to track monthly budgets for an annual analysist(future feature)
 class monthlyBudget(models.Model):
-    month = models.DateField()
+    month = models.IntegerField()
     user = models.ForeignKey(User, related_name="monthlyBudgets", on_delete=models.CASCADE)
     monthlyIncome = models.OneToOneField(Income, on_delete=models.CASCADE)
     monthlyExpenses = models.ForeignKey(Income, related_name="monthlyExpenses", on_delete=models.CASCADE)
